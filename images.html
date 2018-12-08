@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.slide{
+	width: 338px;
+	height: 427px;
+	border:#222222 1px solid;
+	float:left;
+	margin:40px;
+	border-radius: 30px;
+
+}
+.slide > img{
+	position:absolute;
+	border-radius: 30px;
+}
+.slide > .img2{
+	clip:rect(0px, 140px, 427px, 0px); /* top, right, bottom, left */
+}
+.slide > .activator{
+	position:absolute;
+	width:338px;
+	height:427px;
+	opacity:0;
+	cursor: e-resize;
+
+}
+</style>
+<script>
+function slide(event){
+    event.target.previousElementSibling.style.clip = "rect(0px, "+(event.clientX-event.target.offsetLeft)+"px, 427px, 0px)";
+}
+</script>
+</head>
+<body>
+<div class="slide">
+  <img src="img/angelina1.jpg">
+  <img class="img2" src="img/angelina2.jpg">
+  <div class="activator" onmousemove="slide(event)"></div>
+</div>
+<div class="slide">
+  <img src="img/emma1.jpg">
+  <img class="img2" src="img/emma2.jpg">
+  <div class="activator" onmousemove="slide(event)"></div>
+</div>
+<div class="slide">
+  <img src="img/bieber1.jpg">
+  <img class="img2" src="img/bieber2.jpg">
+  <div class="activator" onmousemove="slide(event)"></div>
+</div>
+
+</body>
+</html>

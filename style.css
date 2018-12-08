@@ -1,0 +1,158 @@
+
+/* GENEREL CSS */
+#body {
+  background-color: #60c7d7;
+  box-sizing:border-box;
+  margin:auto;
+  display:block;
+  position:relative;
+  overflow-x:hidden;
+
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* global tekst css */
+h1, h2, h3, h4, p, span, a {
+  font-family:'lato', sans-serif;
+  color:#f2f2f2;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 15px;
+}
+a {
+  text-decoration:none;
+}
+
+/* CSS FOR MAINWRAPPER */
+#mainWrapper {
+  margin-top:120px;
+  height:100%;
+}
+
+
+/* HER STARTER NANNA HEADER CSS */
+
+#header {
+  position:fixed;
+  width:100vw;
+  margin-top:0;
+  top:0;
+  overflow:hidden;
+}
+
+.headerList {
+  position:inherit;
+  background-color:#fd7f5c;
+  width:100%;
+  min-height:50px;
+  margin-top:0;
+  padding-top:20px;
+  padding-left:14%;
+  text-align:center;
+
+  list-style:none;
+
+  transition-duration: .8s;
+
+}
+.headerItem {
+  float:left;
+  margin-right:20px;
+  min-width:200px;
+  height:30px;
+  padding-right:5px;
+
+  border-width:thin;
+  border-color:white;
+  border-style:solid;
+  border-bottom-style:hidden;
+  border-top-style:hidden;
+  border-left-style:hidden;
+
+  cursor:pointer;
+  transition-delay:0.3s;
+  transition-duration:0.5s;
+}
+
+/* giving the header a line on the left too */
+.headerItem1 {
+  border-left-style:solid;
+  padding-left:10px;
+}
+.headerItem i {
+  padding-right:10px;
+  font-size: 25px;
+  float:left;
+
+  transition-delay:0.5s;
+}
+.headerItem p {
+  float:left;
+  margin-top:0;
+  padding-top:5px;
+  min-width:70%;
+  opacity:1;
+
+  transition-delay:0s;
+  transition-duration:0.3s;
+}
+
+/* HERE STARTS THE SMALL HEADER CSS */
+.headerListSmall {
+  padding-left:10%;
+  min-height:30px;
+  max-height:30px;
+  padding-top:5px;
+  padding-bottom:10px;
+
+}
+.headerItemSmall {
+  min-width:20px;
+  padding:5px;
+  border-style:hidden;
+}
+.headerItemSmall p {
+  position:inherit;
+  opacity:0;
+  float:left;
+  padding:0;
+  margin:0;
+  min-width:5px;
+
+}
+.headerItemSmall i {
+  font-size:25px;
+}
+
+
+/* HER STARTER NANNA 'andet'sektionen CSS */
+#andetWrapper {
+  position:inherit;
+  height:100vh;
+  max-height:1080px;
+}
+.andetSmallWrapper {
+  width:80%;
+  margin:auto;
+  height:100%;
+}
+.andetList {
+  list-style:none;
+}
+.andetListItem {
+  float:left;
+  max-width:30%;
+  margin-right:3%;
+}
+.andetListItem img {
+  width:80%;
+  margin:auto;
+  border-radius:10px;
+}
