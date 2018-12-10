@@ -156,3 +156,53 @@ a {
   margin:auto;
   border-radius:10px;
 }
+
+
+
+
+/* MAX PROGRAM */
+
+h4 {
+  font-size: 30px;
+  font-family: lato;
+  padding-left: 300px;
+  color: black;
+}
+
+.programcontainer {
+  display: grid;
+  grid-auto-columns: auto auto auto;
+  grid-column-gap: 25px;
+  background-color: #fff;
+  padding-left: 350px;
+  
+
+
+}
+
+
+
+.thumb {
+  margin-right: -15px;
+}
+
+.thumb img {
+
+  height: 200px;
+  width: 200px;
+}
+
+.thumb:hover img {
+  transform: scale(.90);
+}
+
+.thumb img:hover {
+  transform: rotate(2deg);
+  box-shadow: 0 0 7px rgba(0,0,0, .5);
+}
+
+.thumb a {
+  text-align: center;
+  padding: 20px;
+
+}
