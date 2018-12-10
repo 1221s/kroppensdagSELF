@@ -130,6 +130,34 @@ a {
 .headerItemSmall i {
   font-size:25px;
 }
+/*Laura starter*/
+
+
+.slide{
+	width: 338px;
+	height: 427px;
+	border:#222222 1px solid;
+	float:left;
+	margin:40px;
+	border-radius: 30px;
+
+}
+.slide > img{
+	position:absolute;
+	border-radius: 30px;
+}
+.slide > .img2{
+	clip:rect(0px, 140px, 427px, 0px); 
+}
+.slide > .activator{
+	position:absolute;
+	width:338px;
+	height:427px;
+	opacity:0;
+	cursor: e-resize;
+
+}
+/*LAURA slutter*/
 
 
 /* HER STARTER NANNA 'andet'sektionen CSS */
