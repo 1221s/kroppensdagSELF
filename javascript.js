@@ -60,59 +60,20 @@ if(distance <= 0) {
 
 
 //Javascript for event 1
+function openLightBox() {
+  console.log('hi')
+  document.getElementById("lightbox").classList.add("open");
+}
 
-document.getElementById("clickme").addEventListener("click", function() {
-
-  document.getElementById("lightbox").className = "open";
-
-});
-
-
-
-document.getElementById("close").addEventListener("click", function() {
-
-  document.getElementById("lightbox").className = "";
-
-});
+function closeLightBox(){
+  document.getElementById("lightbox").classList.remove("open");
+}
 
 
 
 document.getElementById("lightbox").addEventListener("click", function(e) {
-
   if (e.target.id == "lightbox") {
-
-    document.getElementById("lightbox").className = "";
-
-  }
-
-});
-
-
-
-//Javascript for event 2
-
-document.getElementById("clickme_1").addEventListener("click", function() {
-
-  document.getElementById("lightbox_1").className = "open";
-
-});
-
-
-
-document.getElementById("close_1").addEventListener("click", function() {
-
-  document.getElementById("lightbox_1").className = "";
-
-});
-
-
-
-document.getElementById("lightbox_1").addEventListener("click", function(e) {
-
-  if (e.target.id == "lightbox_1") {
-
-    document.getElementById("lightbox_1").className = "";
-
+    document.getElementById("lightbox").classList.remove("open");
   }
 
 });
