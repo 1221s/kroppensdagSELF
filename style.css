@@ -445,3 +445,51 @@ html.lb-disable-scrolling {
 /* Her slutter max css */
 
 /* her starter countdown css */
+
+#cd {
+  float:left;
+  font-size: 50px;
+  font-family: arial;
+  text-align: center;
+  margin 0 2.5%;
+  padding: 20px;
+  width:20%;
+  box sizing: border-box;
+  border-radius: 20px;
+
+
+}
+
+.containers {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+
+
+.count {
+  margin: 40px 0;
+}
+
+.countd {
+  display :inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  font-family: verdana;
+}
+
+.countd span{
+  display: block;
+  font-size: 26px;
+  margin-top: 10px;
+}
