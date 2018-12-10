@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	font-family: lato;
 }
@@ -41,3 +42,500 @@ background-color: aquamarine;
 margin-left: 650px;
 margin-top: ;
 }
+=======
+
+/* GENEREL CSS */
+#body {
+  background-color: #60c7d7;
+  box-sizing:border-box;
+  margin:auto;
+  display:block;
+  position:relative;
+  overflow-x:hidden;
+
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* global tekst css */
+h1, h2, h3, h4, p, span, a {
+  font-family:'lato', sans-serif;
+  color:#f2f2f2;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 15px;
+}
+a {
+  text-decoration:none;
+}
+
+/* CSS FOR MAINWRAPPER */
+#mainWrapper {
+  margin-top:120px;
+  height:100%;
+}
+
+
+/* HER STARTER NANNA HEADER CSS */
+
+#header {
+  position:fixed;
+  width:100vw;
+  margin-top:0;
+  top:0;
+  overflow:hidden;
+}
+
+.headerList {
+  position:inherit;
+  background-color:#fd7f5c;
+  width:100%;
+  min-height:50px;
+  margin-top:0;
+  padding-top:20px;
+  padding-left:14%;
+  text-align:center;
+
+  list-style:none;
+
+  transition-duration: .8s;
+
+}
+.headerItem {
+  float:left;
+  margin-right:20px;
+  min-width:200px;
+  height:30px;
+  padding-right:5px;
+
+  border-width:thin;
+  border-color:white;
+  border-style:solid;
+  border-bottom-style:hidden;
+  border-top-style:hidden;
+  border-left-style:hidden;
+
+  cursor:pointer;
+  transition-delay:0.3s;
+  transition-duration:0.5s;
+}
+
+/* giving the header a line on the left too */
+.headerItem1 {
+  border-left-style:solid;
+  padding-left:10px;
+}
+.headerItem i {
+  padding-right:10px;
+  font-size: 25px;
+  float:left;
+
+  transition-delay:0.5s;
+}
+.headerItem p {
+  float:left;
+  margin-top:0;
+  padding-top:5px;
+  min-width:70%;
+  opacity:1;
+
+  transition-delay:0s;
+  transition-duration:0.3s;
+}
+
+/* HERE STARTS THE SMALL HEADER CSS */
+.headerListSmall {
+  padding-left:10%;
+  min-height:30px;
+  max-height:30px;
+  padding-top:5px;
+  padding-bottom:10px;
+
+}
+.headerItemSmall {
+  min-width:20px;
+  padding:5px;
+  border-style:hidden;
+}
+.headerItemSmall p {
+  position:inherit;
+  opacity:0;
+  float:left;
+  padding:0;
+  margin:0;
+  min-width:5px;
+
+}
+.headerItemSmall i {
+  font-size:25px;
+}
+/*Laura starter*/
+
+
+.slide{
+	width: 338px;
+	height: 427px;
+	border:#222222 1px solid;
+	float:left;
+	margin:40px;
+	border-radius: 30px;
+
+}
+.slide > img{
+	position:absolute;
+	border-radius: 30px;
+}
+.slide > .img2{
+	clip:rect(0px, 140px, 427px, 0px);
+}
+.slide > .activator{
+	position:absolute;
+	width:338px;
+	height:427px;
+	opacity:0;
+	cursor: e-resize;
+
+}
+/*LAURA slutter*/
+
+
+/* HER STARTER NANNA 'andet'sektionen CSS */
+#andetWrapper {
+  position:inherit;
+  height:100vh;
+  max-height:1080px;
+}
+.andetSmallWrapper {
+  width:80%;
+  margin:auto;
+  height:100%;
+}
+.andetList {
+  list-style:none;
+}
+.andetListItem {
+  float:left;
+  max-width:30%;
+  margin-right:3%;
+}
+.andetListItem img {
+  width:80%;
+  margin:auto;
+  border-radius:10px;
+}
+
+
+
+
+/* MAX PROGRAM */
+
+h4 {
+  font-size: 30px;
+  font-family: lato;
+  padding-left: 300px;
+  color: black;
+}
+
+.programcontainer {
+  display: grid;
+  grid-auto-columns: auto auto auto;
+  grid-column-gap: 25px;
+  background-color:rgba(255,255,255, 0.3);
+  padding-left: 350px;
+  padding-bottom:100px;
+
+}
+
+
+
+.thumb {
+  margin-right: -15px;
+}
+
+.thumb img {
+
+  height: 200px;
+  width: 200px;
+}
+
+.thumb:hover img {
+  transform: scale(.90);
+}
+
+.thumb img:hover {
+  transform: rotate(2deg);
+  box-shadow: 0 0 7px rgba(0,0,0, .5);
+}
+
+.thumb a {
+  text-align: center;
+  padding: 20px;
+
+}
+
+html.lb-disable-scrolling {
+  overflow: hidden;
+  /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Her slutter max css */
+
+/* her starter countdown css */
+
+#cd {
+  float:left;
+  font-size: 50px;
+  font-family: arial;
+  text-align: center;
+  margin 0 2.5%;
+  padding: 20px;
+  width:20%;
+  box sizing: border-box;
+  border-radius: 20px;
+
+
+}
+
+.containers {
+  width: 100%;
+  position: inherit;
+  top: 50%;
+  margin-left:20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+
+
+.count {
+  margin: 40px 0;
+}
+
+.countd {
+  display :inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid;
+  margin: 0 30px;
+  font-size: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  font-family: verdana;
+}
+
+.countd span{
+  display: block;
+  font-size: 26px;
+  margin-top: 10px;
+}
+>>>>>>> 692612fb92378b1d4c1038ea89b66e3506aa8606
