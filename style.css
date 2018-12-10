@@ -462,9 +462,9 @@ html.lb-disable-scrolling {
 
 .containers {
   width: 100%;
-  position: absolute;
+  position: inherit;
   top: 50%;
-  left:50%;
+  margin-left:20%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
