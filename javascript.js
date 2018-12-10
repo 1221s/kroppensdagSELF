@@ -28,3 +28,7 @@ function headerScroll() {
       document.getElementById("headerProgramText").style.transitionDelay="0.4s";
     }
 }
+
+function slide(event){
+    event.target.previousElementSibling.style.clip = "rect(0px, "+(event.clientX-event.target.offsetLeft)+"px, 427px, 0px)";
+}
