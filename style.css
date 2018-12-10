@@ -1,48 +1,3 @@
-<<<<<<< HEAD
-body {
-	font-family: lato;
-}
-
-.video {
-text-align: center;}
-
-.infobox h2 {
-text-align: center;
-}
-
-.infobox h3 {
-text-align: center;
-}
-
-.infobox p {
-text-align: center;
-padding-left: 400px;
-padding-right: 400px;
-font-size: 25px;
-}
-
-.forumbox h2 {
-text-align: center;
-}
-
-.forumbox p {
-text-align: center;
-padding-left: 400px;
-padding-right: 400px;	
-font-size: 25px;
-}
-
-.forumknap {
-text-decoration: none;
-font-size: 35px;
-color: white;
-padding: 24px 60px;
-border-radius: 45px;
-background-color: aquamarine;
-margin-left: 650px;
-margin-top: ;
-}
-=======
 
 /* GENEREL CSS */
 #body {
@@ -235,9 +190,9 @@ a {
 
 /* MAX PROGRAM */
 
-h4 {
+.programcontainer h4 {
   font-size: 30px;
-  font-family: lato;
+  font-family: 'lato', sans-serif;
   padding-left: 300px;
   color: black;
 }
@@ -538,4 +493,50 @@ html.lb-disable-scrolling {
   font-size: 26px;
   margin-top: 10px;
 }
->>>>>>> 692612fb92378b1d4c1038ea89b66e3506aa8606
+
+/* her starter maria css */
+.video {
+text-align: center;}
+
+.infobox h2 {
+text-align: center;
+}
+
+.infobox h3 {
+text-align: center;
+}
+
+.infobox p {
+text-align: center;
+padding-left: 400px;
+padding-right: 400px;
+font-size: 25px;
+}
+
+.forumbox h2 {
+text-align: center;
+}
+
+.forumbox p {
+text-align: center;
+padding-left: 400px;
+padding-right: 400px;
+font-size: 25px;
+}
+
+.forumknap {
+text-decoration: none;
+font-size: 35px;
+color: white;
+padding: 24px 60px;
+border-radius: 45px;
+background-color: aquamarine;
+margin-left: 650px;
+margin-top: ;
+}
+
+/* her slutter Maria css */
+
+/* Maria lightbox */
+
+/* her slutter maria Lightbox */
