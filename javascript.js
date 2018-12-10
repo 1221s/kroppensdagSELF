@@ -29,12 +29,12 @@ function headerScroll() {
     }
 }
 
+// Laura Jscript 
 function slide(event){
     event.target.previousElementSibling.style.clip = "rect(0px, "+(event.clientX-event.target.offsetLeft)+"px, 427px, 0px)";
 }
 
-
-
+// Her start max Countdown
 var countDownDate = new Date("April 5, 2019 00:00:00").getTime();
 
 var x = setInterval(function() {
