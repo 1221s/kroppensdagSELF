@@ -1,0 +1,43 @@
+body {
+	font-family: lato;
+}
+
+.video {
+text-align: center;}
+
+.infobox h2 {
+text-align: center;
+}
+
+.infobox h3 {
+text-align: center;
+}
+
+.infobox p {
+text-align: center;
+padding-left: 400px;
+padding-right: 400px;
+font-size: 25px;
+}
+
+.forumbox h2 {
+text-align: center;
+}
+
+.forumbox p {
+text-align: center;
+padding-left: 400px;
+padding-right: 400px;	
+font-size: 25px;
+}
+
+.forumknap {
+text-decoration: none;
+font-size: 35px;
+color: white;
+padding: 24px 60px;
+border-radius: 45px;
+background-color: aquamarine;
+margin-left: 650px;
+margin-top: ;
+}
