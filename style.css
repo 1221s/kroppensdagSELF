@@ -224,6 +224,7 @@ a {
   display:block;
   background-color:rgba(255,255,255, 0.3);
   margin:auto;
+  padding-top:30px;
 
 
 }
@@ -232,23 +233,28 @@ a {
   font-size: 30px;
   font-family: 'lato', sans-serif;
   padding-left: 300px;
-  color: black;
 }
 
 
 .thumb {
-  width:100%;
+  width:80%;
   margin:auto;
+}
+.programTaler {
+  min-width:15%;
+  max-width:16%;
+  float:left;
 }
 
 .thumb img {
+  max-width:100%;
+  height:auto;
+  margin-bottom:20px;
+  margin-right:10px;
 
-  height: 200px;
-  width: 200px;
 }
 
 .thumb:hover img {
-  transform: scale(.90);
 }
 
 .thumb img:hover {
@@ -259,7 +265,6 @@ a {
 .thumb a {
   text-align: center;
   padding: 20px;
-
 }
 
 /* Her starter ny program css */
