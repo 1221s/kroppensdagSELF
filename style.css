@@ -343,8 +343,8 @@ a {
 }
 
 .video iframe {
-  max-height:100vh;
-  min-width:60%;
+  max-height:80vh;
+  min-width:80%;
   width:auto;
 
 }
@@ -402,12 +402,16 @@ margin-top:50px;
 #lightbox_content {
   	position: absolute;
   	width: 80%;
-  	height: 80%;
+  	height: 70%;
   	background: #ffffff;
   	border-radius: 3px;
     top: 10%;
     left:10%;
   	text-align: left;
+    padding:30px;
+}
+.lightbox p, .lightbox h2 {
+  color:black;
 }
 
 
@@ -426,10 +430,4 @@ margin-top:50px;
 
 }
 
-.mere_knap {
-  width:100px;
-  height: 100px;
-  background-color:green;
-  cursor:pointer;
-}
 /* her slutter Maria css */
