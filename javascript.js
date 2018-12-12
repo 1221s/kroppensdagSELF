@@ -2,6 +2,7 @@
 
  window.onscroll = function() {headerScroll()};
 
+
 function headerScroll() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("headerList").classList.add("headerListSmall");
@@ -29,7 +30,9 @@ function headerScroll() {
     }
 }
 
+window.scrollBy(0, window.innerHeight);
 // Laura Jscript
+
 function slide(event){
     event.target.previousElementSibling.style.clip = "rect(0px, "
     +(event.clientX-event.target.offsetLeft)+"px, 427px, 0px)";
