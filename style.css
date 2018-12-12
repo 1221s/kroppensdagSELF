@@ -343,7 +343,7 @@ a {
 }
 
 .video iframe {
-  max-height:80vh;
+  max-height:80%;
   min-width:80%;
   width:auto;
 
