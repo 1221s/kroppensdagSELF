@@ -7,6 +7,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+  <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+
 </head>
 <body>
     	<div class="sidenav">
@@ -24,7 +27,7 @@
        <main>
           <div class="indhold">
 
-            <h1>Styleguide/ Kroppens Dag 2019</h1>
+            <h1>Styleguide til Kroppens Dag '19</h1>
 
             <hr>
 
@@ -37,8 +40,7 @@
                 <div class="pria colorDesc">
                    <div class="colorone color"></div>
                    <p> <b>"Lyseblå"</b> <br>
-                    RGB ()<br>
-                    CMYK <br>
+                    RGB (96,199,215)<br>
                     HEX #60c7d7</p>
                 </div>
 
@@ -46,8 +48,7 @@
                 <div class="pria colorDesc">
                    <div class="colortwo color"></div>
                    <p> <b>"Peachy"</b> <br>
-                    RGB ()<br>
-                    CMYK <br>
+                    RGB (253,127,92)<br>
                     HEX #fd7f5c</p>
                 </div>
 
@@ -62,8 +63,8 @@
                 <div class="pric colorDesc">
                     <div class="colorthree color"></div>
                     <p> <b>"Hvid"</b> <br>
-                     RGB ()<br>
-                     CMYK <br>
+                     RGB (34,34,34)<br>
+
                      HEX #f2f2f2</p>
                 </div>
 
@@ -71,8 +72,7 @@
                 <div class="pric colorDesc">
                     <div class="colorfire color"></div>
                     <p> <b>"Sort"</b> <br>
-                     RGB () <br>
-                     CMYK <br>
+                     RGB (242,242,242) <br>
                      HEX #222222</p>
                 </div>
              </div>
@@ -91,28 +91,30 @@
                        <p class="brodet">Brødtekst, 15px<br>
                        Kroppens dag er et event arrangeret af Studenterpræsterne i Odense.</p>
 
-			   <p class="Favicons">Overevej, om det skal være favikoner her eller under ikoner???? Jeg har ikke sat dem ind endnu.....</p>
-
-                       <p> Overvej links også her!!!!!</p>
-                   </div>
-           </div>
-
-
            <hr>
 
 
 
 <!--Header starter -->
-		        <div id="Header">
                <h2>Header</h2>
-                   <div class="header">
+                     <header id="header">
+                     <ul id="headerList" class="headerList ">
+                       <li class="headerItem headerItem1" id="headerItem1"> <a href="#top"> <i class="fas fa-arrow-up"></i><p id="headerHomeText">Home</p></a> </li>
+                       <li class="headerItem" id="headerItem5"> <a href="#video"> <i class="far fa-play-circle"></i><p id="headerVideoText">Video</p></a> </li>
+                       <li class="headerItem " id="headerItem3"> <a href="#forum"> <i class="fas fa-users"></i><p id="headerForumText"> Forum</p> </a> </li>
+                       <li class="headerItem" id="headerItem2"> <a href="#slider"> <i class="far fa-images"></i><p id="headerBilledeText"> Billeder</p> </a> </li>
+                       <li class="headerItem " id="headerItem4"> <a href="#program"> <i class="far fa-calendar-alt"></i><p id="headerProgramText"> Program</p> </a> </li>
+                     </ul>
 
-					   <p>Headeren består af menu, ikoner. Headeren er fikseret, og har z-index......... </p>
+                     </header>
+					   <p>Headeren består af menu kategorier og ikoner. Headeren er fikseret, og har z-index 10 </p>
 
 					   <br>
 
 						<p>HTML</p>
 						<textarea rows="6" cols="100">
+
+
             <header id="header">
               <ul id="headerList" class="headerList ">
                 <li class="headerItem headerItem1" id="headerItem1"> <a href="#INSERTLINKHERE"> <i class="far fa-play-circle"></i><p id="headerVideoText">Video</p></a> </li>
@@ -254,29 +256,37 @@
 
                    </div>
 <!--Header del slutter -->
+
+
+<!--Back to top -->
+
+
+
+
+
+
+<!--Back to top slutter -->
+
+
+
+
+
 		   <hr>
 
 		        <div id="IMG">
                <h2>Billeder</h2>
 
-				<div class="row">
+    				<div class="row">
 
-					<div class="thumbnail">
-						<img class="ikon" src="g" alt="Billededet">
+    					<div class="thumbnail">
+    						<img class="ikon" src="ikoner/3.jpg" alt="Billededet">
+    						</div>
+    					</div>
 
-						</div>
-					</div>
-
-          <textarea rows="6" cols="100">
-          </textarea>
-
-					<p>Billederne i grid bruges med følgende dimensionerne MANGLESpx.
-					<br>	Der bruges 5 billeder per row </p>
+					<p>Billederne i grid bruges med følgende dimensionerne 1000x250px.
+					<br>	Der bruges 2 billeder per række og 2 per kolonne </p>
 				</div>
 			</div>
-
-
-
 
 		   <hr>
 
@@ -284,13 +294,13 @@
 		    <div id="cta">
                <h2>Call to Action</h2>
 
-                   <div>
-				 <a href="index.html">
+        <div>
+				 <a href="styleguide.html">
       				<div class="btn btn-default">
 					   <h3>FORUM</h3>
 					   </div>
-					   </a>
-					   <p>Call to Action knapper er ....evt. indlægges også kooooo' mangles præcis.....</p>
+				</a>
+					   <p>Call to action knap justeres i centrum</p>
 				</div>
               </div>
 
@@ -298,37 +308,15 @@
 
            <div id="ikoner">
                <h2>Ikoner</h2>
-               <p>Ikoner brugt på siden:</p>
+               <p>Ikoner brugte på siden:</p>
 
-                 <div class="ikoner">
-                     <img class="ikon" src="" alt="Forum">
+<i class="far fa-play-circle"></i></li>
+<i class="fas fa-users"></i></li>
+<i class="far fa-images"></i></li>
+<i class="far fa-calendar-alt"></i></li>
 
-                     <img class="ikon" src="" alt="Slider">
+					 <p>Dimensioner:20px, bruges udelukkende til menu knapper</p>
 
-                     <img class="ikon" src="" alt="Program">
-
-					 <p>Dimensioner: px</p>
-					 <p>her hvordan bruges</p>
-
-					 		<div class="my-fancy-container">
-						 	<span class="fa fa-user"></span>
-
-					 		</div>
-
-                    		<div class="my-fancy-container">
-						 	<span class="fa fa-envelope"></span>
-
-					 		</div>
-
-                    		<div class="my-fancy-container">
-						 	<span class="fa fa-shopping-cart"></span>
-					 		</div>
-
-					 		<div class="my-fancy-container">
-						 	<span class="fa fa-2x fa-arrow-alt-circle-left"></span>
-					 		</div>
-					  <p>Font Awesome Icons, størrelse 1.55em. Pil er 2X størrelse, grundet dets placering</p>
-                 </div>
            <hr>
 
 		 </div>
