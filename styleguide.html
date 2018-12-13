@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Styleguide/ Kroppens dag 2019</title>
+    <link rel="stylesheet" href="styleguide.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+    	<div class="sidenav">
+       <nav id="fixednav">
+          <ul>
+              <li><a href="#farver1">Farver</a></li>
+              <li><a href="#typografi">Typografi</a></li>
+      			  <li><a href="#Header">Header</a></li>
+      			  <li><a href="#IMG">Billeder</a></li>
+      			  <li><a href="#cta">Call To Action</a></li>
+              <li><a href="#ikoner">Ikoner</a></li>
+          </ul>
+       </nav>
+			</div>
+       <main>
+          <div class="indhold">
+
+            <h1>Styleguide/ Kroppens Dag 2019</h1>
+
+            <hr>
+
+           <div id="farver1">
+               <h2>Farver</h2>
+               <h3>Primære farver</h3>
+           </div>
+
+            <div class="primary">
+                <div class="pria colorDesc">
+                   <div class="colorone color"></div>
+                   <p> <b>"Lyseblå"</b> <br>
+                    RGB ()<br>
+                    CMYK <br>
+                    HEX #60c7d7</p>
+                </div>
+
+            <div class="primary">
+                <div class="pria colorDesc">
+                   <div class="colortwo color"></div>
+                   <p> <b>"Peachy"</b> <br>
+                    RGB ()<br>
+                    CMYK <br>
+                    HEX #fd7f5c</p>
+                </div>
+
+                </div>
+            </div>
+
+            <div id="farver2">
+               <h3>Sekundære farver</h3>
+            </div>
+
+            <div class="universe">
+                <div class="pric colorDesc">
+                    <div class="colorthree color"></div>
+                    <p> <b>"Hvid"</b> <br>
+                     RGB ()<br>
+                     CMYK <br>
+                     HEX #f2f2f2</p>
+                </div>
+
+            <div class="universe">
+                <div class="pric colorDesc">
+                    <div class="colorfire color"></div>
+                    <p> <b>"Sort"</b> <br>
+                     RGB () <br>
+                     CMYK <br>
+                     HEX #222222</p>
+                </div>
+             </div>
+           </div>
+
+           <hr>
+
+           <div id="typografi">
+               <h2>Typografi</h2>
+                   <div class="overskrifter">
+                       <p><i>Typer af overskrifter der bruges på siden:</i></p>
+                       <p class="headeret">h1 OVERSKRIFT, 40px bold</p>
+                       <p class="headerto">h2 UNDEROVERSKRIFT, 30px bold</p>
+                   </div>
+                      <p><i>Typer af brødtekst der bruges på siden:</i></p>
+                       <p class="brodet">Brødtekst, 15px<br>
+                       Kroppens dag er et event arrangeret af Studenterpræsterne i Odense.</p>
+
+			   <p class="Favicons">Overevej, om det skal være favikoner her eller under ikoner???? Jeg har ikke sat dem ind endnu.....</p>
+
+                       <p> Overvej links også her!!!!!</p>
+                   </div>
+           </div>
+
+
+           <hr>
+
+
+
+<!--Header starter -->
+		        <div id="Header">
+               <h2>Header</h2>
+                   <div class="header">
+
+					   <p>Headeren består af menu, ikoner. Headeren er fikseret, og har z-index......... </p>
+
+					   <br>
+
+						<p>HTML</p>
+						<textarea rows="6" cols="100">
+            <header id="header">
+              <ul id="headerList" class="headerList ">
+                <li class="headerItem headerItem1" id="headerItem1"> <a href="#INSERTLINKHERE"> <i class="far fa-play-circle"></i><p id="headerVideoText">Video</p></a> </li>
+                <li class="headerItem" id="headerItem2"> <a href="#INSERTLINKHERE"> <i class="far fa-images"></i><p id="headerBilledeText"> Billedslider</p> </a> </li>
+                <li class="headerItem " id="headerItem3"> <a href="#INSERTLINKHERE"> <i class="fas fa-users"></i><p id="headerForumText"> Forum</p> </a> </li>
+                <li class="headerItem " id="headerItem4"> <a href="#INSERTLINKHERE"> <i class="far fa-calendar-alt"></i><p id="headerProgramText"> Program</p> </a> </li>
+              </ul>
+            </header>
+            </textarea>
+
+  					<p>Css</p>
+            <textarea rows="6" cols="100">
+              #header {
+                position:fixed;
+                width:100vw;
+                margin-top:0;
+                top:0;
+                bottom: 40px;
+                overflow:hidden;
+              }
+
+              .headerList {
+                position:inherit;
+                background-color:#fd7f5c;
+                width:100%;
+                min-height:50px;
+                margin-top:0;
+                padding-top:20px;
+                padding-left:14%;
+                text-align:center;
+
+                list-style:none;
+
+                transition-duration: .8s;
+
+              }
+              .headerItem {
+                float:left;
+                margin-right:20px;
+                min-width:200px;
+                height:30px;
+                padding-right:5px;
+
+                border-width:thin;
+                border-color:white;
+                border-style:solid;
+                border-bottom-style:hidden;
+                border-top-style:hidden;
+                border-left-style:hidden;
+
+                cursor:pointer;
+                transition-delay:0.3s;
+                transition-duration:0.5s;
+              }
+
+              /* giving the header a line on the left too */
+              .headerItem1 {
+                border-left-style:solid;
+                padding-left:10px;
+              }
+              .headerItem i {
+                padding-right:10px;
+                font-size: 25px;
+                float:left;
+
+                transition-delay:0.5s;
+              }
+              .headerItem p {
+                float:left;
+                margin-top:0;
+                padding-top:5px;
+                min-width:70%;
+                opacity:1;
+
+                transition-delay:0s;
+                transition-duration:0.3s;
+              }
+
+              /* HERE STARTS THE SMALL HEADER CSS */
+              .headerListSmall {
+                padding-left:10%;
+                min-height:30px;
+                max-height:30px;
+                padding-top:5px;
+                padding-bottom:10px;
+
+              }
+              .headerItemSmall {
+                min-width:20px;
+                padding:5px;
+                border-style:hidden;
+              }
+              .headerItemSmall p {
+                position:inherit;
+                opacity:0;
+                float:left;
+                padding:0;
+                margin:0;
+                min-width:5px;
+
+              }
+              .headerItemSmall i {
+                font-size:25px;
+              }
+  					</textarea>
+
+            <p>Javascript</p>
+            <textarea rows="6" cols="100">
+              window.onscroll = function() {headerScroll()};
+
+             function headerScroll() {
+                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                     document.getElementById("headerList").classList.add("headerListSmall");
+                     document.getElementById("headerItem1").classList.add("headerItemSmall");
+                     document.getElementById("headerItem2").classList.add("headerItemSmall");
+                     document.getElementById("headerItem3").classList.add("headerItemSmall");
+                     document.getElementById("headerItem4").classList.add("headerItemSmall");
+
+                     document.getElementById("headerVideoText").style.transitionDelay="0s";
+                     document.getElementById("headerBilledeText").style.transitionDelay="0s";
+                     document.getElementById("headerForumText").style.transitionDelay="0s";
+                     document.getElementById("headerProgramText").style.transitionDelay="0s";
+
+                 } else {
+                   document.getElementById("headerList").classList.remove("headerListSmall");
+                   document.getElementById("headerItem1").classList.remove("headerItemSmall");
+                   document.getElementById("headerItem2").classList.remove("headerItemSmall");
+                   document.getElementById("headerItem3").classList.remove("headerItemSmall");
+                   document.getElementById("headerItem4").classList.remove("headerItemSmall");
+
+                   document.getElementById("headerVideoText").style.transitionDelay="0.4s";
+                   document.getElementById("headerBilledeText").style.transitionDelay="0.4s";
+                   document.getElementById("headerForumText").style.transitionDelay="0.4s";
+                   document.getElementById("headerProgramText").style.transitionDelay="0.4s";
+                 }
+             }
+           </textarea>
+
+
+                   </div>
+<!--Header del slutter -->
+		   <hr>
+
+		        <div id="IMG">
+               <h2>Billeder</h2>
+
+				<div class="row">
+
+					<div class="thumbnail">
+						<img class="ikon" src="g" alt="Billededet">
+
+						</div>
+					</div>
+
+          <textarea rows="6" cols="100">
+          </textarea>
+
+					<p>Billederne i grid bruges med følgende dimensionerne MANGLESpx.
+					<br>	Der bruges 5 billeder per row </p>
+				</div>
+			</div>
+
+
+
+
+		   <hr>
+
+
+		    <div id="cta">
+               <h2>Call to Action</h2>
+
+                   <div>
+				 <a href="index.html">
+      				<div class="btn btn-default">
+					   <h3>FORUM</h3>
+					   </div>
+					   </a>
+					   <p>Call to Action knapper er ....evt. indlægges også kooooo' mangles præcis.....</p>
+				</div>
+              </div>
+
+		   <hr>
+
+           <div id="ikoner">
+               <h2>Ikoner</h2>
+               <p>Ikoner brugt på siden:</p>
+
+                 <div class="ikoner">
+                     <img class="ikon" src="" alt="Forum">
+
+                     <img class="ikon" src="" alt="Slider">
+
+                     <img class="ikon" src="" alt="Program">
+
+					 <p>Dimensioner: px</p>
+					 <p>her hvordan bruges</p>
+
+					 		<div class="my-fancy-container">
+						 	<span class="fa fa-user"></span>
+
+					 		</div>
+
+                    		<div class="my-fancy-container">
+						 	<span class="fa fa-envelope"></span>
+
+					 		</div>
+
+                    		<div class="my-fancy-container">
+						 	<span class="fa fa-shopping-cart"></span>
+					 		</div>
+
+					 		<div class="my-fancy-container">
+						 	<span class="fa fa-2x fa-arrow-alt-circle-left"></span>
+					 		</div>
+					  <p>Font Awesome Icons, størrelse 1.55em. Pil er 2X størrelse, grundet dets placering</p>
+                 </div>
+           <hr>
+
+		 </div>
+		</div>
+   </main>
+
+
+</body>
+
+</html>
