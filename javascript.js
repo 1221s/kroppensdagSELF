@@ -2,7 +2,6 @@
 
  window.onscroll = function() {headerScroll()};
 
-
 function headerScroll() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("headerList").classList.add("headerListSmall");
@@ -30,7 +29,6 @@ function headerScroll() {
     }
 }
 
-window.scrollBy(0, window.innerHeight);
 // Laura Jscript
 
 function slide(event){
@@ -40,10 +38,7 @@ function slide(event){
 
 // Her start max Countdown
 var countDownDate = new Date("Apr 5, 2019 00:00:00").getTime();
-
 var x = setInterval(function() {
-
-
 var now = new Date().getTime();
 var distance = count - now;
 
