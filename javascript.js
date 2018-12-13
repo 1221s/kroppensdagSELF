@@ -1,6 +1,11 @@
  // her starter NANNA's jscript til headeren //
 
- window.onscroll = function() {headerScroll()};
+ window.onscroll = function() {bothScrollFunctions()};
+
+function bothScrollFunctions(){
+  scrollFunction();
+  headerScroll();
+}
 
 function headerScroll() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -60,30 +65,23 @@ setTimeout(showSlides, 1000); // Change image every 2 seconds
 }
 
 // Her start max Countdown
-<<<<<<< HEAD
 var countDownDate = new Date("Apr 5, 2019 00:00:00").getTime();
+
 var x = setInterval(function() {
+
+
 var now = new Date().getTime();
 var distance = count - now;
-=======
-//var countDownDate = new Date("Apr 5, 2019 00:00:00").getTime();
 
-//var x = setInterval(function() {
+var days = Math.floor(distance/(1000*60*60*24));
 
-
-//var now = new Date().getTime();
-//var distance = count - now;
->>>>>>> a5b54884b203594678d99899214737dc6a15ba5c
-
-//var days = Math.floor(distance/(1000*60*60*24));
-
-//document.getElementById("days").innerHTML = days;
+document.getElementById("days").innerHTML = days;
 
 
-//if(distance <= 0) {
-//  clearInterval(x);
-//}
-//},1000);
+if(distance <= 0) {
+  clearInterval(x);
+}
+},1000);
 
 
 //Her Starter Lightbox JS//
@@ -101,11 +99,23 @@ function closeLightBox(){
   document.getElementById("lightbox").classList.remove("open");
 }
 
-
-
 document.getElementById("lightbox").addEventListener("click", function(e) {
   if (e.target.id == "lightbox") {
     document.getElementById("lightbox").classList.remove("open");
   }
 
 });
+
+function scrollFunction() {
+  console.log('hello!')
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.getElementById("LauraBtn").style.display = "block";
+  } else {
+    document.getElementById("LauraBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
