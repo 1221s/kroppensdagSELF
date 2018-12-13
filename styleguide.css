@@ -83,7 +83,7 @@ ul {
     width: 275px;
 }
 
-li a {
+#fixednav li a {
     display: block;
     font-size: 20px;
     color: #000000;
@@ -271,6 +271,7 @@ p {
   padding-right:5px;
   font-size: 25px;
   float:left;
+  color:white;
 
   transition-delay:0.5s;
 }
@@ -280,37 +281,12 @@ p {
   padding-top:5px;
   min-width:20%;
   opacity:1;
+  color:white;
 
   transition-delay:0s;
   transition-duration:0.3s;
 }
 
-/* HERE STARTS THE SMALL HEADER CSS */
-.headerListSmall {
-  padding-left:10%;
-  min-height:30px;
-  max-height:30px;
-  padding-top:5px;
-  padding-bottom:10px;
-
-}
-.headerItemSmall {
-  min-width:20px;
-  padding:5px;
-  border-style:hidden;
-}
-.headerItemSmall p {
-  position:inherit;
-  opacity:0;
-  float:left;
-  padding:0;
-  margin:0;
-  min-width:5px;
-
-}
-.headerItemSmall i {
-  font-size:25px;
-}
 
 /* her starter index top slideshow */
 .image {
