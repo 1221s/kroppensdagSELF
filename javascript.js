@@ -109,9 +109,9 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
 function scrollFunction() {
   console.log('hello!')
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.getElementById("LauraBtn").style.display = "block";
+    document.getElementById("LauraBtn").style.bottom = "30px";
   } else {
-    document.getElementById("LauraBtn").style.display = "none";
+    document.getElementById("LauraBtn").style.bottom = "-160px";
   }
 }
 
