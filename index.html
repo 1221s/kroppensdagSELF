@@ -18,11 +18,13 @@
 <!-- HER STARTER NANNA's KODE overskrift: header -->
 <header id="header">
 <ul id="headerList" class="headerList ">
-  <li class="headerItem headerItem1" id="headerItem1"> <a href="#INSERTLINKHERE"> <i class="far fa-play-circle"></i><p id="headerVideoText">Video</p></a> </li>
-  <li class="headerItem" id="headerItem2"> <a href="#INSERTLINKHERE"> <i class="far fa-images"></i><p id="headerBilledeText"> Billedslider</p> </a> </li>
-  <li class="headerItem " id="headerItem3"> <a href="#INSERTLINKHERE"> <i class="fas fa-users"></i><p id="headerForumText"> Forum</p> </a> </li>
-  <li class="headerItem " id="headerItem4"> <a href="#INSERTLINKHERE"> <i class="far fa-calendar-alt"></i><p id="headerProgramText"> Program</p> </a> </li>
+  <li class="headerItem headerItem1" id="headerItem1"> <a href="#top"> <i class="fas fa-arrow-up"></i><p id="headerHomeText">Home</p></a> </li>
+  <li class="headerItem" id="headerItem5"> <a href="#video"> <i class="far fa-play-circle"></i><p id="headerVideoText">Video</p></a> </li>
+  <li class="headerItem " id="headerItem3"> <a href="#forum"> <i class="fas fa-users"></i><p id="headerForumText"> Forum</p> </a> </li>
+  <li class="headerItem" id="headerItem2"> <a href="#slider"> <i class="far fa-images"></i><p id="headerBilledeText"> Billeder</p> </a> </li>
+  <li class="headerItem " id="headerItem4"> <a href="#program"> <i class="far fa-calendar-alt"></i><p id="headerProgramText"> Program</p> </a> </li>
 </ul>
+
 </header>
 
 <!-- Her slutter Nanna's kode overskrift: header -->
@@ -37,38 +39,67 @@
       <span id="days">00</span>
       Dage
     </div>
-  </div> -->
+  </div>
 
-      </div>
+</div> -->
 <!-- her slutter Max countdown -->
-<section id="mainWrapper">
+<a name="top"></a>
+<section class="mainBox whitebg" id="firstMainBox">
+
+  <div id="indexImageSlides">
+
+    <div class="mySlides fade ">
+      <img class=" image imageSliderImage" src="img/imageslider/1.jpg" alt="swampland">
+    </div>
+
+    <div class="mySlides fade">
+      <img class=" image imageSliderImage" src="img/imageslider/2.jpg" alt="mountainrange">
+    </div>
+
+    <div class="mySlides fade">
+      <img class=" image imageSliderImage" src="img/imageslider/3.jpg" alt="pond">
+    </div>
+
+    <div class="mySlides fade">
+      <img class=" image imageSliderImage" src="img/imageslider/4.jpg" alt="river">
+    </div>
+
+    <div class="mySlides fade">
+      <img class=" image imageSliderImage" src="img/imageslider/5.jpg" alt="river">
+    </div>
+  </div>
+
+</section>
+
+  <!-- MARIA BOKS  overskrift: Oplev noget perfekt -->
+  <section class="mainBox whitebg">
+    <div class="infobox">
+    <h2>Oplev noget Perfekt</h2>
+    <h3>Den 5. april 2019</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    </div>
+  </section>
+  <!-- SLUT MARIA BOX -->
 
 	<!-- MARIA BOKS  overskrift: Kampagnevideo -->
+  <a class="anchor" name="video"></a>
   <section class="mainBox">
+    <h2>Har du set vores video?</h2>
     <div class="video">
 		<iframe width="300px" height="400px" src="https://www.youtube.com/embed/-IpWdOZkdk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </section>
   <!-- SLUT MARIA BOX -->
 
-	<!-- MARIA BOKS  overskrift: Oplev noget perfekt -->
-  <section class="mainBox">
-    <div class="infobox">
-		<h2>Oplev noget Perfekt</h2>
-		<h3>Den 5. april 2019</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
-		</p>
-    </div>
-  </section>
-  <!-- SLUT MARIA BOX -->
-
 	 <!-- MARIA BOKS  overskrift: Forum -->
-  <section class="mainBox">
+   <a class="anchor whitebg" name="forum"></a>
+  <section class="mainBox whitebg">
     <div class="forumbox">
 		<h2>Forum</h2>
 		<p>
@@ -81,39 +112,31 @@
 		<a href="#" class="forumknap">Gå til Forum</a>
     </div>
   </section>
+
   <!-- SLUT MARIA BOX -->
 
-</section>
-
 <!--Laura slider Photoshop-->
-<section class="sliderPics">
+<a class="anchor" name="slider"></a>
+<section class="mainBox">
+  <h2>Du er ikke alene</h2>
   <div class="sliderContainer">
 <div class="sliderSmallContainer">
-    <div class="slide">
-      <img src="img/angelina1.jpg">
-      <img class="img2" src="img/angelina2.jpg">
-      <div class="activator" onmousemove="slide(event)">
-      </div>
-    </div>
+      <img src="img/imageslider/1.jpg">
 </div>
 
 <div class="sliderSmallContainer">
-  <div class="slide">
-    <img src="img/emma1.jpg">
-    <img class="img2" src="img/emma2.jpg">
-    <div class="activator" onmousemove="slide(event)">
-    </div>
-  </div>
+    <img src="img/imageslider/2.jpg">
 </div>
 
   <div class="sliderSmallContainer">
-    <div class="slide">
-      <img src="img/bieber1.jpg">
-      <img class="img2" src="img/bieber2.jpg">
-      <div class="activator" onmousemove="slide(event)">
+      <img src="img/imageslider/3.jpg">
+    </div>
+
+    <div class="sliderSmallContainer">
+        <img src="img/imageslider/4.jpg">
       </div>
-    </div>
-    </div>
+
+
 </div>
 
 </section>
@@ -129,23 +152,11 @@
 
 			<div class="lightbox_beskrivelse_af_foredrag">
 
-    		<h2>Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2>
-			<p><strong>Onsdag den 31. okt. 2018 på Daginstitution Mælkevejen, Grønvangen
-        32 kl. 19.00</strong><br><br>
-			Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne,
-      fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev:
-      “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre
-      noget Arbejde på egen hånd…..De senere År har hun haft stærke erotiske Tilbøjeligheder
-      så Forældrene må passe på hende både Dag og Nat”.<br>
-			Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt
-      om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.<br>
-			Foredragsholderen er uddannet historiker fra Odense Universitet, og har siden 2004
-      beskæftiget sig med lokalhistorien i Vestsjælland og med historien om De Dansk vestindiske
-      Øer.<br><br>
+    		<h2>Dette er et eksempel på en taler</h2>
+			<p><strong>kl. 10:00</strong><br><br>
+			Her står der et stykke tekst om taleren.<br><br>
 
-			<strong>Arrangamentet er kun for medlemmer af Langeskov Borgerforening.<br>
-			Pris: 50,00 kr.<br>
-			Pris inkl. 1 øl eller vand</strong>
+			<strong>Her er information omkring hvad de skal tale om<br></strong>
 			</p>
 
 			</div>
@@ -157,8 +168,9 @@
 <!-- her slutter Maria lightbox -->
 
 <!-- Max Program -->
+<a  class="anchor" name="program">
+<section class="mainBox">
 <div class="programcontainer">
-
 
   <h4> Program </h4>
 
@@ -190,27 +202,15 @@
 
                       <div onclick="openLightBox()" class="programTaler">
                         <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+
+                        <div onclick="openLightBox()" class="programTaler">
+                          <img src="img/soren1.jpg" alt="soren ostergaard"></div>
 </div>
     </div>
+    </section>
+    </a>
 
 <!-- Her slutter max Program -->
-
-<!-- Her starter 'set andre steder' sektionen overskrift: andet
-      OBS: Denne skal være i bunden! Så indsæt din html over dette!-->
-<section id="andetWrapper">
-  <div class="andetSmallWrapper">
-    <div class="andetIntro">
-      <h1>Måske har du set Kroppens Dag her:</h1>
-    </div>
-    <ul id="andetList" class="andetList">
-      <li class="andetListItem"> <h2>Klistermærker</h2> <span> <p>TEKST</p> <p>TEKST</p> </span> <img src="img/vandmelon.jpg" alt="Det var meningen der skulle være et billede her" class="andetListItemImg"> </li>
-      <li class="andetListItem"> <h2>Folder</h2> <span> <p>TEKST</p> <p>TEKST</p> </span> <img src="img/vandmelon.jpg" alt="Det var meningen der skulle være et billede her" class="andetListItemImg"> </li>
-      <li class="andetListItem"> <h2>Cykelcover</h2> <span> <p>TEKST</p> <p>TEKST</p> </span> <img src="img/vandmelon.jpg" alt="Det var meningen der skulle være et billede her" class="andetListItemImg"> </li>
-    </ul>
-  </div>
-
-</section>
-<!-- Her slutter NANNA's 'set andre steder' sektionen overskrift: andet -->
 </section>
 
 <footer></footer>

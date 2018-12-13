@@ -9,8 +9,10 @@ function headerScroll() {
         document.getElementById("headerItem2").classList.add("headerItemSmall");
         document.getElementById("headerItem3").classList.add("headerItemSmall");
         document.getElementById("headerItem4").classList.add("headerItemSmall");
+        document.getElementById("headerItem5").classList.add("headerItemSmall");
 
         document.getElementById("headerVideoText").style.transitionDelay="0s";
+        document.getElementById("headerHomeText").style.transitionDelay="0s";
         document.getElementById("headerBilledeText").style.transitionDelay="0s";
         document.getElementById("headerForumText").style.transitionDelay="0s";
         document.getElementById("headerProgramText").style.transitionDelay="0s";
@@ -21,36 +23,67 @@ function headerScroll() {
       document.getElementById("headerItem2").classList.remove("headerItemSmall");
       document.getElementById("headerItem3").classList.remove("headerItemSmall");
       document.getElementById("headerItem4").classList.remove("headerItemSmall");
+      document.getElementById("headerItem5").classList.remove("headerItemSmall");
 
       document.getElementById("headerVideoText").style.transitionDelay="0.4s";
       document.getElementById("headerBilledeText").style.transitionDelay="0.4s";
       document.getElementById("headerForumText").style.transitionDelay="0.4s";
       document.getElementById("headerProgramText").style.transitionDelay="0.4s";
+      document.getElementById("headerHomeText").style.transitionDelay="0.4s";
     }
 }
+//window.onscroll = function(){
+//window.scrollBy(0, 0);
+//}
 
 // Laura Jscript
 
-function slide(event){
-    event.target.previousElementSibling.style.clip = "rect(0px, "
-    +(event.clientX-event.target.offsetLeft)+"px, 427px, 0px)";
+//function slide(event){
+  //  event.target.previousElementSibling.style.clip = "rect(0px, "
+    //+(event.clientX-event.target.offsetLeft)+"px, 427px, 0px)";
+//}
+
+// SLIDESHOW
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "block";
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[i-1].style.display = "none";
+setTimeout(showSlides, 1000); // Change image every 2 seconds
 }
 
 // Her start max Countdown
+<<<<<<< HEAD
 var countDownDate = new Date("Apr 5, 2019 00:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
 var distance = count - now;
+=======
+//var countDownDate = new Date("Apr 5, 2019 00:00:00").getTime();
 
-var days = Math.floor(distance/(1000*60*60*24));
-
-document.getElementById("days").innerHTML = days;
+//var x = setInterval(function() {
 
 
-if(distance <= 0) {
-  clearInterval(x);
-}
-},1000);
+//var now = new Date().getTime();
+//var distance = count - now;
+>>>>>>> a5b54884b203594678d99899214737dc6a15ba5c
+
+//var days = Math.floor(distance/(1000*60*60*24));
+
+//document.getElementById("days").innerHTML = days;
+
+
+//if(distance <= 0) {
+//  clearInterval(x);
+//}
+//},1000);
 
 
 //Her Starter Lightbox JS//
