@@ -106,8 +106,9 @@ document.getElementById("lightbox").addEventListener("click", function(e) {
 
 });
 
+//Back to top knap
+
 function scrollFunction() {
-  console.log('hello!')
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     document.getElementById("LauraBtn").style.bottom = "30px";
   } else {
@@ -118,4 +119,26 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+// arrownDownTop animation
+function arrowDownTop() {
+  var firstTimeout
+  var secondTimeout
+  if(document.body.scrollTop < 150){
+
+  firstTimeout =  setTimeout(function(){
+    document.getElementById('arrowDownTop').style.top ="91vh";
+
+      secondTimeout =  setTimeout(function(){
+            document.getElementById('arrowDownTop').style.top ="88vh";
+            }, 200);
+
+    }, 1000);
+  }
+  else {
+    document.getElementById('arrowDowntop').style.top ="90vh";
+    clearTimeOut();
+  }
+
 }
