@@ -5,7 +5,7 @@ html {
 }
 
 #body {
-  background-color: #0534bf;
+   background-image: linear-gradient(#0534bf, #1c2541);
   box-sizing:border-box;
   margin:auto;
   display:block;
@@ -34,6 +34,11 @@ a {
   text-decoration:none;
 }
 
+a p {
+  text-decoration:underline;
+  color:#c41e3d;
+}
+
 /* CSS FOR MAINWRAPPER */
 #mainWrapper {
   height:100%;
@@ -46,110 +51,15 @@ a {
   padding:0;
 }
 
-/* HER STARTER NANNA HEADER CSS */
-
-#header {
-  position:fixed;
-  width:100vw;
-  margin-top:0;
-  top:0;
-  overflow:hidden;
-
-  z-index:10;
-}
-
-.headerList {
-  position:inherit;
-  background-color:#1c2541;
-  width:100%;
-  min-height:50px;
-  margin-top:0;
-  padding-top:20px;
-  padding-left:14%;
-  text-align:center;
-
-  list-style:none;
-
-  transition-duration: .8s;
-
-}
-.headerItem {
-  float:left;
-  margin-right:20px;
-  min-width:10%;
-  height:30px;
-  padding-right:5px;
-
-  border-width:thin;
-  border-color:white;
-  border-style:solid;
-  border-bottom-style:hidden;
-  border-top-style:hidden;
-  border-left-style:hidden;
-
-  cursor:pointer;
-  transition-delay:0.3s;
-  transition-duration:0.5s;
-}
-
-/* giving the header a line on the left too */
-.headerItem1 {
-  border-left-style:solid;
-  padding-left:10px;
-}
-.headerItem i {
-  padding-right:5px;
-  font-size: 25px;
-  float:left;
-
-  transition-delay:0.5s;
-}
-.headerItem p {
-  float:left;
-  margin-top:0;
-  padding-top:5px;
-  min-width:20%;
-  opacity:1;
-
-  transition-delay:0s;
-  transition-duration:0.3s;
-}
-
-/* HERE STARTS THE SMALL HEADER CSS */
-.headerListSmall {
-  padding-left:10%;
-  min-height:30px;
-  max-height:30px;
-  padding-top:5px;
-  padding-bottom:10px;
-
-}
-.headerItemSmall {
-  min-width:20px;
-  padding:5px;
-  border-style:hidden;
-}
-.headerItemSmall p {
-  position:inherit;
-  opacity:0;
-  float:left;
-  padding:0;
-  margin:0;
-  min-width:5px;
-
-}
-.headerItemSmall i {
-  font-size:25px;
-}
-
 /*Laura starter*/
 
 .speechBubbleContainer {
-  position:relative;
+  position:absolute;
   width:80vw;
   height:50vh;
   margin:auto;
   margin-left:10%;
+  z-index:5;
 }
 
 .speechBubble {
@@ -202,10 +112,69 @@ a {
   margin-right:150px;
 }
 
+.speechBubbleBigContainer {
+  position:relative;
+  max-height:20vh;
+  max-width:100vw;
+}
+
 .topTekstBottom {
   position:relative;
-  margin-top:15%;
+  margin-top:70vh;
 }
+.topTekstBottom p {
+  margin-top:-30px;
+  margin-bottom:10px;
+}
+
+#arrowDownTop {
+  color:rgba(196, 30, 61, 0.8);
+  font-size:3em;
+  margin-top:-10px;
+
+  transition-duration:0.2s;
+}
+
+#titleBig {
+  font-size:5.5em;
+  margin-bottom:-40px;
+}
+
+/* Speech bubbles BACK */
+.speechbubbleBack {
+  position:relative;
+  z-index:3;
+  width:300px;
+  height:80px;
+  background-color:rgba(196, 30, 61, 0.8);
+  border-radius:35px;
+  border: solid 2px #0534bf;
+}
+
+#speechbubbleBack1 {
+  position:absolute;
+  margin-top:15vh;
+  right:20%;
+}
+#speechbubbleBack2 {
+  position:absolute;
+  margin-top:30vh;
+  left:25%;
+}
+
+#speechbubbleBack3 {
+  position:absolute;
+  margin-top:45vh;
+  right:15%;
+}
+
+#speechbubbleBack4 {
+  position:absolute;
+  margin-top:60vh;
+  left:20%;
+}
+
+
 
 /*.img2{
 	clip:rect(0px, 240px, 427px, 0px);
@@ -248,45 +217,68 @@ a {
 
 .programcontainer {
   position:inherit;
-  min-height:100vh;
+  height:80vh;
   width:100%;
   display:block;
   margin:auto;
-  padding-top:30px;
 }
 
 .programcontainer h4 {
-  font-size: 30px;
+  font-size: 2em;
   font-family: 'lato', sans-serif;
+  text-align:left;
+  margin-left:14vw;
 }
 
 .thumb {
-  width:80%;
-  margin-left:15%;
-}
-.programTaler {
-  width:15%;
-  max-width:16%;
-  margin-bottom:20px;
-  margin-right:10px;
+  width:100%;
+  margin:auto;
+  padding-left:11.5vw;
 }
 
-.thumb img {
-  max-width:100%;
-  height:auto;
-}
-
-.thumb img:hover {
-  transform: rotate(2deg);
-  box-shadow: 0 0 7px rgba(0,0,0, .5);
-}
-
-/* Her starter ny program css */
-.programTaler {
-  width:32%;
+.programList {
+  max-height:80vh;
+  width:30vw;
   float:left;
-  padding-right:10px;
+  text-align:left;
+  list-style:none;
+  margin:auto;
+  margin-right:5vw;
 }
+
+.programList p {
+  margin:0;
+  margin-bottom:2px;
+  font-size:1em;
+
+  transition-duration: 0.1s;
+}
+
+.programTime {
+  text-decoration:underline;
+}
+
+.programTitle {
+  font-weight:bold;
+}
+.programTitle p {
+  font-size:1.5em;
+}
+.programPerson {
+  font-style:italic;
+}
+
+.programList li {
+  width:100%;
+  height: 15%;
+  min-height:12%;
+  margin-bottom:10px;
+  background-color:#7d1128;
+  padding:35px;
+  border-radius:15px;
+}
+/* Her starter ny program css */
+
 
 /* Her slutter max css */
 
@@ -345,50 +337,123 @@ a {
   position:relative;
   width:100%;
   height:100vh;
+  min-height:79vh;
   text-align:center;
-  padding-top:30px;
+  margin:auto;
 }
 
 #firstMainBox  {
-  height:90vh;
+  height:100vh;
+  min-height:95vh;
   padding-top:0;
 }
 
-#arrowDownTop {
-  color:white;
-  font-size:3em;
-  margin-top:-50px;
+.fourboxContainer {
+  height:80vh;
+}
 
-  transition-duration:0.2s;
+.fourbox {
+  position:relative;
+  width:40%;
+  height:40%;
+  padding:35px;
+  background-color:#1c2541;
+  float:left;
+  margin-left:3.5vw;
+  margin-right;
+  margin-top:2%;
+
+  border-radius:15px;
+}
+
+#topBoxFour {
+  border-radius: 15px 15px 0px 0px;
+  z-index:5;
+}
+#bottomBoxFour {
+  margin-top:0;
+  border-radius: 0px 0px 15px 15px;
+  padding-top:70px;
 }
 
 .infobox, .forumbox {
-  width:80%;
+  width:100%;
   height:100%;
   margin:auto;
 }
 
-.whitebg {
-  /*background-color:rgba(255,255,255, 0.3); */
+.infobox p {
+  text-align:left;
+font-size: 1.5em;
 }
 
-.infobox p {
-font-size: 25px;
+.infobox h3 {
+  color:#c41e3d;
 }
 
 .forumbox p {
-font-size: 25px;
+font-size: 1.5em;
 margin-bottom:50px;
+text-align:left;
+}
+.bigP {
+  text-align:left;
+  margin-bottom:30px;
+  margin-top:-20px;
 }
 
 .forumknap {
+position:absolute;
 text-decoration: none;
+width:33%;
 font-size: 35px;
 color: white;
 padding: 24px 60px;
 border-radius: 45px;
 background-color: #ff2c55;
-margin-top:50px;
+left:25%;
+}
+
+#oplevPerfHeader {
+  margin-bottom:-10px;
+}
+
+/* Temaer */
+.theme {
+  width:33%;
+  float:left;
+}
+
+.theme i {
+  font-size:5em;
+  color:white;
+  width:150px;
+  height:100px;
+  padding: 10px;
+  padding-top:20px;
+  border:solid 2px white;
+  border-radius:15px;
+}
+
+.theme p {
+  font-size:1.5em;
+}
+
+.mail {
+  position:relative;
+  width:40%;
+  margin-left:10%;
+  font-size:2em;
+  font-family:'lato', sans-serif;
+  padding: 24px 60px;
+  border-radius: 45px;
+  background-color: #ff2c55;
+  margin-left:20%;
+  color:white;
+}
+
+#tekstUnderMail {
+  font-size:1.5em;
 }
 
 /* Maria lightbox */
@@ -460,9 +525,17 @@ margin-top:50px;
 }
 
 .topBtn {
-  color:black;
-  font-size:2em;
+  color:#c41e3d;
+  font-size:3em;
 }
 
 #LauraBtn:hover {
+}
+
+footer {
+  height:30vh;
+  padding-left:150px;
+  padding-right:150px;
+  padding-top: 50px;
+  background-color: #1c2541;
 }

@@ -16,16 +16,6 @@
 
 <body id="body">
 <!-- HER STARTER NANNA's KODE overskrift: header -->
-<header id="header">
-<ul id="headerList" class="headerList ">
-  <li class="headerItem headerItem1" id="headerItem1"> <a href="#top"> <i class="fas fa-arrow-up"></i><p id="headerHomeText">Home</p></a> </li>
-  <li class="headerItem" id="headerItem5"> <a href="#video"> <i class="far fa-play-circle"></i><p id="headerVideoText">Video</p></a> </li>
-  <li class="headerItem " id="headerItem3"> <a href="#forum"> <i class="fas fa-users"></i><p id="headerForumText"> Forum</p> </a> </li>
-  <li class="headerItem" id="headerItem2"> <a href="#slider"> <i class="far fa-images"></i><p id="headerBilledeText"> Billeder</p> </a> </li>
-  <li class="headerItem " id="headerItem4"> <a href="#program"> <i class="far fa-calendar-alt"></i><p id="headerProgramText"> Program</p> </a> </li>
-</ul>
-
-</header>
 
 <!-- Her slutter Nanna's kode overskrift: header -->
 <section id="mainWrapper">
@@ -38,8 +28,10 @@
 <a name="top"></a>
 <section class="mainBox whitebg" id="firstMainBox">
 
-  <!--the four blocks-->
+  <!--speech bubbles FRONT-->
   <a class="anchor" name="slider"></a>
+  <div class="speechBubbleBigContainer">
+
     <div class="speechBubbleContainer">
 
 <div class="speechBubble" id="topSpeechBubble">
@@ -68,41 +60,54 @@
 </div>
 
   </div>
+    <!-- Speechbubbles FRONT ends-->
+
+    <!-- speechbubbles BACK starts -->
+    <div class="speechbubbleBack" id="speechbubbleBack1"></div>
+    <div class="speechbubbleBack" id="speechbubbleBack2"></div>
+    <div class="speechbubbleBack" id="speechbubbleBack3"></div>
+    <div class="speechbubbleBack" id="speechbubbleBack4"></div>
+
+  </div>
 
   <div class="topTekstBottom">
-    <h1>Du er ikke alene</h1>
+    <h1 id="titleBig">Kroppens Dag</h1>
+    <h1>Vær med til at starte debatten</h1>
+    <p>5. April 2019</p>
     <i class="fas fa-angle-down arrowDownTop" id="arrowDownTop"></i>
   </div>
-  <!--Laura slider end end-->
 
 </section>
 
   <!-- MARIA BOKS  overskrift: Oplev noget perfekt -->
-  <section class="mainBox whitebg">
+<section class="mainBox">
+<section class="fourboxContainer">
+  <section class="fourbox" id="topBoxFour">
     <div class="infobox">
-    <h2>Oplev noget Perfekt</h2>
+    <h2 id="oplevPerfHeader">Oplev noget Perfekt</h2>
     <h3>Den 5. april 2019</h3>
     <p>
       Debatten om kroppen, image og det
 
-perfekte er det helt store fokus i sam-
-fundet idag. Sociale medier sætter
+      perfekte er det helt store fokus i samfundet idag. Sociale medier sætter
 
-standarden for kropsidealet og det
-øger presset for at opnå det perfekte.
-Kroppens dag starter debatten om
-hvorvidt det stadig er tilladt at elske
-kroppen, os selv og hinanden i al vores
-mangfoldighed.
-    </p>
+      standarden for kropsidealet og det
+      øger presset for at opnå det perfekte.</p>
+      <p>
+      Kroppens dag starter debatten om
+      hvorvidt det stadig er tilladt at elske
+      kroppen, os selv og hinanden i al vores
+      mangfoldighed.
+          </p>
+      <p>Eventet foregår i Odense Domkirke.</p>
+      <p class="bigP">Klosterbakken 2, Odense C</p>
     </div>
   </section>
   <!-- SLUT MARIA BOX -->
 
 
 	 <!-- MARIA BOKS  overskrift: Forum -->
-   <a class="anchor whitebg" name="forum"></a>
-  <section class="mainBox whitebg">
+  <section class="fourbox">
     <div class="forumbox">
 		<h2>Forum</h2>
 		<p>
@@ -112,6 +117,35 @@ mangfoldighed.
 		</p>
 		<a href="#" class="forumknap">Gå til Forum</a>
     </div>
+  </section>
+
+  <section class="fourbox" id="bottomBoxFour">
+    <h2>Temaer</h2>
+      <div class="theme">
+        <i class="fas fa-drumstick-bite"></i>
+        <p>Mad</p>
+      </div>
+
+      <div class="theme">
+        <i class="fas fa-user-friends"></i>
+        <p>Relationer</p>
+      </div>
+
+      <div class="theme">
+        <i class="fas fa-child"></i>
+        <p>Kroppen</p>
+      </div>
+  </section>
+
+  <section class="fourbox">
+    <h2>Større Grupper</h2>
+    <h3>Kroppens Dag er en god, lærerig mulighed for såvel skoleklasser som klubber der ønsker at give deres medlemmer en
+        tankevækkende og sjov oplevelse.</h3>
+    <div class="mail">Send os en mail</div>
+    <p id="tekstUnderMail">Så kan vi være sikre på der er plads til alle!</p>
+  </section>
+
+  </section>
   </section>
 
   <!-- SLUT MARIA BOX -->
@@ -142,52 +176,105 @@ mangfoldighed.
 <!-- her slutter Maria lightbox -->
 
 <!-- Max Program -->
-<a  class="anchor" name="program">
 <section class="mainBox">
 <div class="programcontainer">
 
   <h4> Program </h4>
 
-    <div class="thumb">
+      <div class="thumb">
+        <ul class="programList">
 
-      <div onclick="openLightBox()" class="programTaler">
-        <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">10:00</p>
+            <p class="programTitle">Åbning og Velkomst</p>
+            <p class="programPerson">Studenterpræst Kirstine Hansen</p>
+          </li>
 
-        <div onclick="openLightBox()" class="programTaler">
-          <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">10:15</p>
+            <p class="programTitle">Foredrag/oplæg, center for ungdomsforskning</p>
+            <p class="programPerson">Søren Østergaard</p>
+          </li>
 
-          <div onclick="openLightBox()" class="programTaler">
-            <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">11:00</p>
+            <p class="programTitle">Debatpanel ved Søren Østergaard, Sofie Warberg og Mikkel Sallign Holmgaar</p>
+            <p class="programPerson"></p>
+          </li>
 
-            <div onclick="openLightBox()" class="programTaler">
-              <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">12:00</p>
+            <p class="programTitle">Bevægelse i kroppen dagens sang</p>
+            <p class="programPerson">Janne Wind</p>
+          </li>
 
-              <div onclick="openLightBox()" class="programTaler">
-                <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">12:10</p>
+            <p class="programTitle">Smagsprøver</p>
+            <p class="programPerson">Kold College Studerende</p>
+          </li>
 
-                <div onclick="openLightBox()" class="programTaler">
-                  <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">12:30</p>
+            <p class="programTitle">Sang og undervisning om stemmen</p>
+            <p class="programPerson">Janne Wind</p>
+          </li>
 
-                  <div onclick="openLightBox()" class="programTaler">
-                    <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+        </ul>
 
-                    <div onclick="openLightBox()" class="programTaler">
-                      <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+        <ul class="programList">
 
-                      <div onclick="openLightBox()" class="programTaler">
-                        <img src="img/soren1.jpg" alt="soren ostergaard"></div>
+          <li>
+            <p class="programTime">13:00</p>
+            <p class="programTitle">Oplæg om kroppen, kost og bevægelse. Hvad sker der i kroppen</p>
+            <p class="programPerson"></p>
+          </li>
 
-                        <div onclick="openLightBox()" class="programTaler">
-                          <img src="img/soren1.jpg" alt="soren ostergaard"></div>
-</div>
-    </div>
-    </section>
-    </a>
+          <li>
+            <p class="programTime">14:30</p>
+            <p class="programTitle"><p>Pause og mulighed for at besøge stationer i kirkerummet</p></p>
+            <p class="programPerson"></p>
+          </li>
+
+          <li>
+            <p class="programTime">15:15</p>
+            <p class="programTitle">Danseforestilling</p>
+            <p class="programPerson">Dansere fra Odense</p>
+          </li>
+
+          <li>
+            <p class="programTime">16:00</p>
+            <p class="programTitle">Sangworkshop</p>
+            <p class="programPerson">Janne wind</p>
+          </li>
+
+          <li>
+            <p class="programTime">16:30</p>
+            <p class="programTitle">Glædeskoncert med de sange vi har lært</p>
+            <p class="programPerson">Janne Wind</p>
+          </li>
+
+          <li>
+            <p class="programTime">17:00</p>
+            <p class="programTitle">Afslutning og tak for idag</p>
+            <p class="programPerson"></p>
+          </li>
+
+        </ul>
+      </div>
+  </div>
+
+  </section>
 
 <!-- Her slutter max Program -->
 </section>
 
-<footer></footer>
+<footer>
+<h1>Om Studenterpræsterne Odense</h1>
+<p>Eventet 'Kroppens Dag' er arrangeret af Studenterpræsterne Odense, støttet af Danmarks Folkirke.</p>
+<a href="http://studenterpraest-odense.dk"><p>Læs mere om Studenterpræsterne</p></a>
+<a href="facebook.com/etellerandet"> <p>Se eventet på Facebook</p> </a>
+</footer>
 
   </body>
 </html>
