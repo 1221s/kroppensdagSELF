@@ -45,6 +45,7 @@ a p {
 
 /* CSS FOR MAINWRAPPER */
 #mainWrapper {
+  display:none;
   height:100%;
 }
 
@@ -590,16 +591,5 @@ footer {
     width:100px;
     height:50px;
     font-size:3em;
-  }
-}
-@media only screen and (min-width: 681px) {
-  #mainWrapper {
-    display:block;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  #mainWrapper {
-    display:none;
   }
 }

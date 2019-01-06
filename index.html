@@ -9,27 +9,22 @@
 <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
 
 <!-- vores egne stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 700px)" href="style.css">
+<link rel="stylesheet" media="screen and (max-width: 650px)" href="smallscreen.css">
     <script src="javascript.js" charset="utf-8"></script>
 
   </head>
 
 <body id="body">
-<!-- HER STARTER NANNA's KODE overskrift: header -->
-
-<!-- Her slutter Nanna's kode overskrift: header -->
 <section id="mainWrapper">
   <!-- Back to top knap -->
 
     <button onclick="topFunction()" title="Go to top" id="LauraBtn"><i class="fas fa-arrow-up topBtn"></i></button>
 
-<!-- back to top knap slut -->
-
 <a name="top"></a>
+<!-- back to top knap slut -->
 <section class="mainBox whitebg" id="firstMainBox">
-
   <!--speech bubbles FRONT-->
-  <a class="anchor" name="slider"></a>
   <div class="speechBubbleBigContainer">
 
     <div class="speechBubbleContainer">
@@ -39,17 +34,17 @@
   <div class="speechBubbleLeft"></div>
 </div>
 
-<div class="speechBubble speechBubbleBigRight">
+<div class="speechBubble speechBubbleBigRight" id="secondBubble">
   Jeg vil gerne have en større numse.
   <div class="speechBubbleRight"></div>
 </div>
 
-<div class="speechBubble">
+<div class="speechBubble" id="thirdBubble">
   Jeg vil gerne tabe 30kg.
   <div class="speechBubbleLeft"></div>
 </div>
 
-<div class="speechBubble speechBubbleBigRight">
+<div class="speechBubble speechBubbleBigRight" id="fourthBubble">
   Jeg vil gerne være højere.
   <div class="speechBubbleLeft"></div>
 </div>
@@ -139,8 +134,8 @@
 
   <section class="fourbox">
     <h2>Større Grupper</h2>
-    <h3>Kroppens Dag er en god, lærerig mulighed for såvel skoleklasser som klubber der ønsker at give deres medlemmer en
-        tankevækkende og sjov oplevelse.</h3>
+    <p class="left">Kroppens Dag er en god, lærerig mulighed for såvel skoleklasser som klubber der ønsker at give deres medlemmer en
+        tankevækkende og sjov oplevelse.</p>
     <div class="mail">Send os en mail</div>
     <p id="tekstUnderMail">Så kan vi være sikre på der er plads til alle!</p>
   </section>
@@ -266,7 +261,11 @@
 
   </section>
 
-<!-- Her slutter max Program -->
+</section>
+
+<section class="mobile version">
+
+
 </section>
 
 <footer>
