@@ -5,7 +5,7 @@ html {
 }
 
 #body {
-   background-image: linear-gradient(#0534bf, #1c2541);
+   background-color: #0534bf;
   box-sizing:border-box;
   margin:auto;
   display:inline-block;
@@ -22,13 +22,13 @@ h1, h2, h3, h4, p, span, a {
   color:#f2f2f2;
 }
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 h2 {
   font-size: 30px;
 }
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 a {
   text-decoration:none;
@@ -41,6 +41,7 @@ a p {
 
 .left {
   text-align:left;
+  margin-top:-15px;
 }
 
 /* CSS FOR MAINWRAPPER */
@@ -59,14 +60,13 @@ a p {
 
 .speechBubbleBigContainer {
   position:relative;
-  height:40vh;
+  height:35vh;
   width:100vw;
 }
 
 .speechBubbleContainer {
   position:absolute;
   width:80%;
-  height:100%;
   left:10%;
   top:0;
   z-index:5;
@@ -77,13 +77,14 @@ a p {
   background-color: #c41e3d;
   border-radius: 35px;
   padding: 20px;
+  padding-bottom:5px;
   max-width:50vw;
   min-height:60px;
   border: solid 2px #0534bf;
 
   font-family: 'Lato', sans-serif;
   color:white;
-  font-size:2em;
+  font-size:1.2em;
 }
 .speechBubbleLeft {
   position:absolute;
@@ -104,37 +105,39 @@ a p {
   border-color: transparent transparent #c41e3d transparent;
   border-radius: 0 0 50% 80px;
   transform:rotate(50deg);
-  margin-top:-10px;
+  margin-top:-20px;
 }
 
 .speechBubbleBigRight {
   float:right;
   min-width: 30vw;
-  top:10vh;
+  top:3vh;
 }
 
 #topSpeechBubble {
-  top:15vh;
+  top:10vh;
   right:5vw;
   z-index:5;
 }
 
 #lowestSpeeckBubble {
-  top: 10vh;
-  left:8vw;
+  top: 5vh;
+  left:4vw;
 }
 
 #secondBubble {
-  top:35vh;
-  left:25vw;
+  top:32vh;
+  left:0vw;
 }
 
 #thirdBubble {
-  top:40vh;
+  min-width:300px;
+  top:30vh;
+  left:40vw;
 }
 #fourthBubble {
   top:50vh;
-  right:10vw;
+  right:25vw;
 }
 
 .topTekstBottom {
@@ -189,7 +192,7 @@ a p {
 
 #speechbubbleBack4 {
   position:absolute;
-  margin-top:60vh;
+  margin-top:45vh;
   left:20vw;
 }
 
@@ -236,28 +239,25 @@ a p {
 
 .programcontainer {
   position:relative;
-  height:80vh;
   width:100%;
   display:block;
   margin:auto;
+  margin-top:30px;
 }
 
 .programcontainer h4 {
   font-size: 2em;
   font-family: 'lato', sans-serif;
-  text-align:left;
-  margin-left:14vw;
+  text-align:center;
 }
 
 .thumb {
   width:100%;
   margin:auto;
-  padding-left:11.5vw;
 }
 
 .programList {
-  max-height:80vh;
-  width:30vw;
+  width:23.8vw;
   float:left;
   text-align:left;
   list-style:none;
@@ -289,10 +289,10 @@ a p {
 
 .programList li {
   width:100%;
-  height: 15%;
-  min-height:12%;
+  height: 50px;
+  min-height:40px;
   margin-bottom:10px;
-  background-color:#7d1128;
+  background-color:#1c2541;
   padding:35px;
   border-radius:15px;
 }
@@ -372,14 +372,16 @@ a p {
 
 .fourbox {
   position:relative;
-  width:40vw;
-  height:35vh;
+  width:39vw;
+  height:15vh;
   padding:35px;
+  padding-top:5px;
   background-color:#1c2541;
   float:left;
   margin-left:3.5vw;
   margin-right;
   margin-top:2%;
+  padding-bottom:150px;
 
   border-radius:15px;
 }
@@ -391,7 +393,7 @@ a p {
 #bottomBoxFour {
   margin-top:0;
   border-radius: 0px 0px 15px 15px;
-  padding-top:5vh;
+  padding-top:30px;
 }
 
 .infobox, .forumbox {
@@ -399,10 +401,13 @@ a p {
   height:100%;
   margin:auto;
 }
+.forumbox {
+  padding-left:15%;
+}
 
 .infobox p {
   text-align:left;
-font-size: 1.5em;
+font-size: 1em;
 }
 
 .infobox h3 {
@@ -410,26 +415,26 @@ font-size: 1.5em;
 }
 
 .forumbox p {
-font-size: 1.5em;
+font-size: 1em;
 margin-bottom:50px;
 text-align:left;
 }
-.bigP {
+.forumbox h2 {
+  margin-left:-160px;
+  padding-left:0px;
+}
+.bigP p{
+  font-size:0.8em;
   text-align:left;
   margin-bottom:30px;
-  margin-top:-20px;
+  margin-top:-15px;
 }
 
-.forumknap {
-position:absolute;
-text-decoration: none;
-width:33%;
-font-size: 35px;
-color: white;
-padding: 24px 60px;
-border-radius: 45px;
-background-color: #ff2c55;
-left:25%;
+.forumbox i {
+  font-size:5em;
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:0px;
 }
 
 #oplevPerfHeader {
@@ -443,10 +448,10 @@ left:25%;
 }
 
 .theme i {
-  font-size:5em;
+  font-size:3em;
   color:white;
-  width:150px;
-  height:100px;
+  width:100px;
+  height:50px;
   padding: 10px;
   padding-top:20px;
   border:solid 2px white;
@@ -454,24 +459,23 @@ left:25%;
 }
 
 .theme p {
-  font-size:1.5em;
+  font-size:1em;
 }
 
 .mail {
   position:relative;
-  width:40%;
-  margin-left:10%;
-  font-size:2em;
+  width:200px;
+  font-size:1em;
   font-family:'lato', sans-serif;
-  padding: 24px 60px;
+  padding: 10px 10px;
   border-radius: 45px;
   background-color: #ff2c55;
-  margin-left:20%;
+  margin-left:30%;
   color:white;
 }
 
 #tekstUnderMail {
-  font-size:1.5em;
+  font-size:1em;
 }
 
 /* Maria lightbox */
@@ -556,50 +560,13 @@ footer {
   padding-left:150px;
   padding-right:150px;
   padding-top: 50px;
+  padding-bottom:100px;
   background-color: #1c2541;
+
+  margin-top:100px;
+  margin-bottom:-30px;
 }
 
-@media only screen and (max-width: 1700px min-height: 800px) {
-
-.fourbox {
-  padding-top:1px;
-  height:40vh;
-}
-
-}
-
-@media only screen and (max-height: 770px, min-height: 690px) {
-  footer {
-    margin-top:30vh;
-    padding-bottom:10vh;
-  }
-  .forumknap, .mail {
-    height:20px;
-    padding-top:15px;
-    padding-bottom:35px;
-  }
-
-  .fourbox {
-    padding-bottom:50px;
-  }
-  #bottomBoxFour {
-    padding-top:10vh;
-    padding-bottom:0;
-  }
-  .theme i {
-    width:100px;
-    height:50px;
-    font-size:3em;
-  }
-}
-@media only screen and (min-width: 681px) {
-  #mainWrapper {
-    display:block;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  #mainWrapper {
-    display:none;
-  }
+footer p {
+  font-size:1em;
 }
